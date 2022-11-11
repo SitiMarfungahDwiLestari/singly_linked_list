@@ -138,6 +138,22 @@ namespace singly_linked_list
                                 obj.addNode();
                             }
                             break;
+                        case '2':
+                            {
+                                if (obj.listEmpty())
+                                {
+                                    Console.WriteLine("\nList is Empty");
+                                    break;
+                                }
+                                Console.Write("\nEnter the roll number of" + " the student whose record is to be deleted : ");
+                                int nim = Convert.ToInt32(Console.ReadLine());
+                                Console.WriteLine();
+                                if (obj.delNode(nim) == false)
+                                    Console.WriteLine("\nRecord not found");
+                                else
+                                    Console.WriteLine("Record with roll number " + nim + "Deleted");
+                            }
+                            break;
                     }
                 }
                 catch (Exception)
