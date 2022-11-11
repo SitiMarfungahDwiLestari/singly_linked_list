@@ -131,6 +131,14 @@ namespace singly_linked_list
                     Console.WriteLine("4. Search for a record in the list");
                     Console.WriteLine("5. Exit");
                     char ch = Convert.ToChar(Console.ReadLine());
+                    switch (ch)
+                    {
+                        case '1':
+                            {
+                                obj.addNode();
+                            }
+                            break;
+                    }
                 }
                 catch (Exception)
                 {
