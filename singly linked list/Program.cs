@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace singly_linked_list
 {
-    class Program
+    //each consist of the information part and lik to the next mode
+    class Node
     {
-        static void Main(string[] args)
-        {
-        }
+        public int rollNumber;
+        public string name;
+        public Node next;
     }
 }
